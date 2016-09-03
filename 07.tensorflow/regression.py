@@ -30,6 +30,6 @@ for step in range(101):
     if step % 10 == 0:
         print(step, session.run(W), session.run(b))
 
-print("\nFinal Leanrings:\n")
-print("b: ", session.run(b))
-print("W: ", session.run(W))
+print("\nFinal Leanrings:")
+print("\tb: {0:.2f}".format(float(session.run(b))))
+print("\tW: {0:.2f}".format(float(session.run(W))))
