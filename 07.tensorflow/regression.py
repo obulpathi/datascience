@@ -25,10 +25,11 @@ session = tf.Session()
 session.run(init)
 
 # Fit the line.
-for step in range(201):
+for step in range(101):
     session.run(train)
-    if step % 20 == 0:
+    if step % 10 == 0:
         print(step, session.run(W), session.run(b))
 
+print("\nFinal Leanrings:\n")
 print("b: ", session.run(b))
 print("W: ", session.run(W))
